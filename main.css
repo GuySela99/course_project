@@ -1,0 +1,236 @@
+
+#product-overview {
+    background-image: url(freedom.jpg) ;
+    background-size: 100% 130%;
+    background-repeat: no-repeat;
+    background-position:100% 30% ;
+    width: 100%;
+    height: 50vh;
+    padding: 10px;
+    filter: grayscale(30%);
+    position: relative;
+}
+
+    /* plans section */
+.button {
+    font: inherit;
+    padding: 8px;
+    border-radius: 8px;
+    background: rgb(25, 95, 37);
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    cursor: pointer;
+    border: solid 2px rgb(25, 95, 37);
+}
+
+.button:hover,
+.button:active {
+    background: white;
+    color: rgb(25, 95, 37);
+}
+
+.button:focus {
+    outline: none;
+}
+.section-title {
+    color: #2ddf5c;
+    text-align: center;
+}
+
+#product-overview h1 {
+    color: white;
+    font-family: 'Anton', sans-serif;
+    position: absolute;
+    bottom: 0;
+}
+
+#plans{
+    text-align: center;
+    
+}
+
+.plan{
+    /* text-align: center;
+    display: inline-block; */
+    width: 100%;
+    /* margin: 8px; */
+    /* margin-left: 20px; */
+    padding: 16px;
+    vertical-align: middle;
+    background-color: #d5ffdc;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.plan_list{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+.price{
+    color: silver;
+    margin: 3px 0;
+}
+
+.plan_list_item{
+    margin: 2px 0;
+}
+.plan_box{
+   box-shadow: 10px 10px 8px rgba(20, 19, 19, 0.5);
+   border: solid rgb(20, 19, 19) 2px;
+   background-color: rgb(10, 128, 29);
+}
+.plan_recommended{
+    box-shadow: 20px 10px 8px rgba(20, 19, 19, 0.5);
+    background-color:white ;
+    padding: 5px;
+    margin: 10px 30px 5px 30px;
+    border-radius: 8px;
+    color: rgb(15, 121, 32);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.plan_title{
+    color: rgb(42, 179, 27);
+    margin: 3px 0;
+}
+.plans_lists{
+    text-align: center;
+    margin: 0 auto;
+    width: 90%;
+}
+/* information section */
+#info{
+    background-color: rgb(233, 8, 83);
+    margin: 20px 0 0 0;
+}
+.info_title{
+    text-align: center;
+    color: white;
+    margin: 40px 0;
+    padding-top: 30px;
+}
+.info_list{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-items: center;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+.info_item{
+    /* display: inline-block; */
+    width: 100%;
+    vertical-align: top;
+}
+.info_item_image{
+    border: 2px solid rgb(68, 65, 65);
+    border-radius: 50%;
+    height: 128px;
+    width: 128px;
+    margin: 0 auto;
+    background-color: rgb(241, 100, 178);
+}
+.info_descreption{
+    color: white;
+    font-size: 20px;
+    font-weight:bold ;
+    text-align: center;
+}
+/* notification section */
+.notification {
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:space-evenly; 
+    align-content: center;
+    z-index: 7;
+    width: 60vw;
+    height: 30vh;
+    background-color: white;
+    top: 20%;
+    left: 20%;
+}
+.notification_question{
+    color: rgb(163, 55, 60);
+    font-weight: bold;
+    font-size: 2rem;
+}
+.notification_button{
+    width: 100px;
+    height: 40px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.notification_button_yes{
+    background-color: green;
+    border:2px white solid;
+}
+.notification_button_yes:hover,
+ .notification_button_yes:active{
+    background-color: white;
+    border: 2px green solid;
+}
+
+.notification_button_no{
+    background-color: red;
+    border:2px white solid;
+}
+.notification_button_no:hover,
+.notification_button_no:active {
+    background-color: white;
+    border: 2px red solid;
+}
+
+@media(min-width: 40rem){
+    .plans_lists{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        max-width: 900px;
+    }
+
+    .plan {
+        width: 30%;
+        /* margin: 8px;
+        margin-left: 20px;
+        padding: 16px;  */
+        background-color: #d5ffdc;
+    }
+    #product-overview{
+        background-position: center;
+        height: 528px;
+    }
+    .plan_box{
+        position: relative;
+        z-index: 5;
+        background-color: rgb(10, 128, 29);
+    }
+    .plan_list_item{
+        margin:5px 0
+    }
+    .plan_title{
+        margin: 5px 0;
+    }
+    .price{
+        margin: 8px 0   ;
+    }
+
+    .info_list{
+        display: flex;
+        flex-direction: row;
+        justify-items: center;
+        align-items: center;
+    }
+    .info_item{
+        width: 33%;
+    }
+}

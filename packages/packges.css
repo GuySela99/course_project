@@ -1,0 +1,75 @@
+/* main section */
+.card {
+    border: solid black 2px;
+    /* display: block; */
+    width: 100%;
+    background-color: rgb(6, 158, 52);
+    padding: 16px;
+    position: relative;
+    margin-bottom: 10px;
+}
+
+.card:hover,
+.card:active {
+    border: solid red 2px;
+    
+}
+
+.card-right{
+    position: relative;
+    left: 0;
+    text-align: end;
+    background-color: rgb(6, 80, 28);
+}
+.card-right h1{
+    color:white;
+}
+.card a{
+    text-decoration: none;
+    color: black;
+}
+.card-box{
+    background-color: white;
+    border:solid black 2px;
+    padding: 6px;
+}
+.card_explin{
+    color: rgb(158, 152, 152);
+}
+.deck{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    margin-top: 40px;
+    background-image: url(plans-background.jpg);
+    background-position: 100% 10%;
+    background-size: cover;
+    filter: grayscale(50%);
+    padding: 20px 0 20px 0;
+    
+}
+.recommened{
+    background-color: red;
+    position: absolute;
+    color: white;
+    padding: 8px;
+    font-size: 16px;
+    right: 5px;
+    top: 0;
+}
+@media(min-width: 40rem){
+.card {
+    border: solid black 2px;
+    display: block;
+    width: 50%;
+}
+.card-right {
+    position: relative;
+    left: 50%;
+}
+
+.deck {
+    display:block ;
+}
+}
